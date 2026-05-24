@@ -1,0 +1,58 @@
+from setuptools import setup, find_packages
+
+setup(
+    name="HalfMind",
+    version="1.1.0",
+    author="LazyLoopStudio",
+    description="HalfMind is here to provide a lot of tools for AI Agents",
+    long_description=open("README.md", encoding="utf-8").read() if __import__("os").path.exists("README.md") else "",
+    long_description_content_type="text/markdown",
+    packages=find_packages(),
+    python_requires=">=3.8",
+    install_requires=[
+        "requests>=2.28.0",
+        "beautifulsoup4>=4.11.0",
+        "lxml>=4.9.0",
+        "Pillow>=9.0.0",
+        "PyPDF4>=1.27.0",
+        "reportlab>=3.6.0",
+        "psutil>=5.9.0",
+        "markdown>=3.4.0",
+        "cryptography>=39.0.0",
+        "PyJWT>=2.6.0",
+        "python-whois>=0.9.0",
+        "websocket-client>=1.5.0",
+    ],
+    extras_require={
+        "desktop": [
+            "pyautogui>=0.9.54",
+        ],
+        "dev": [
+            "pytest>=7.0.0",
+            "pytest-cov>=4.0.0",
+            "flake8>=6.0.0",
+            "black>=23.0.0",
+        ],
+    },
+    classifiers=[
+        "Development Status :: 5 - Production/Stable",
+        "Intended Audience :: Developers",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
+        "Programming Language :: Python :: 3.12",
+        "Topic :: Software Development :: Libraries :: Python Modules",
+        "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    ],
+    keywords="ai agents tools utilities pdf image crypto network database",
+    project_urls={
+        "Homepage": "https://github.com/LazyLoopStudio/HalfMind",
+        "Documentation": "https://github.com/LazyLoopStudio/HalfMind#readme",
+        "Repository": "https://github.com/LazyLoopStudio/HalfMind",
+        "Issues": "https://github.com/LazyLoopStudio/HalfMind/issues",
+    },
+)
